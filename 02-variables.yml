@@ -17,3 +17,21 @@
       ansible.builtin.debug:
         msg: The Third URL is {{URL3}}
 
+
+- name: second demo on variables
+  hosts: all
+  vars: vars-sample.yml
+  tasks:
+    - name: printing the 4th URL
+      ansible.builtin.debug:
+        msg: the fourth url is {{ URL4 }}
+
+    - name: printing the 5th URL
+      ansible.builtin.debug:
+        msg: the fourth url is {{ URL5 }}
+
+    - name: printing the 6th URL
+      ansible.builtin.debug:
+        msg: the fourth url is {{ URL6 }}
+
+
