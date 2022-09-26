@@ -7,13 +7,13 @@
   tasks:
     - name: print the first URL
       ansible.builtin.debug:
-        msg: The First URL is {{ URL }}
+        msg: The First URL is {{URL}}
 
     - name: print the second URL
       ansible.builtin.debug:
-        msg: The Second URL is {{ URL2 }}
+        msg: The Second URL is {{URL2}}
 
     - name: print the third URL
       ansible.builtin.debug:
-        msg: The Third URL is {{ URL3 }}
+        msg: The Third URL is {{URL3}}
 
