@@ -29,10 +29,10 @@
 
     - name: printing the 5th URL
       ansible.builtin.debug:
-        msg: the fourth url is {{ URL5 }}
+        msg: the fifth url is {{ URL5 }}
 
     - name: printing the 6th URL
       ansible.builtin.debug:
-        msg: the fourth url is {{ URL6 }}
+        msg: the sixth url is {{ URL6 }}
 
 
