@@ -9,13 +9,6 @@
       ansible.builtin.debug:
         msg: The First URL is {{URL}}
 
-    - name: print the second URL
-      ansible.builtin.debug:
-        msg: The Second URL is {{URL2}}
-
-    - name: print the third URL
-      ansible.builtin.debug:
-        msg: The Third URL is {{URL3}}
 
 
 - name: second demo on variables
@@ -27,12 +20,15 @@
       ansible.builtin.debug:
         msg: the fourth url is the {{ URL4 }}
 
-    - name: printing the 5th URL
-      ansible.builtin.debug:
-        msg: the fifth url is {{ URL5 }}
 
-    - name: printing the 6th URL
+#### TASK LEVEL VARIABLES
+- name: showing examples for task level variables
+  hosts: all
+  tasks:
+    - name: printing the 7th URL
       ansible.builtin.debug:
-        msg: the sixth url is {{ URL6 }}
+        msg: "{{ URL7 }}"
+      vars:
+        URL7: www.vyjayanthimovies.com
 
 
