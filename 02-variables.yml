@@ -31,13 +31,7 @@
       vars:
         URL7: www.vyjayanthimovies.com
 
-### INVENTORY LEVEL VARIABLE
-- name: showing the examples for the inventory level varibales
-  hosts: all
-  tasks:
-    - name: printing the 8th URL
-      ansible.builtin.debug:
-        msg: "{{ URL8 }} is the 8th URL "
+
 
 
 
