@@ -1,0 +1,19 @@
+- name: Demo on Variables
+  hosts: all
+  vars:
+    URL: play.example.com
+    URL2: www.google.com
+    URL3: www.microsoft.com
+  tasks:
+    - name: print the first URL
+      ansible.builtin.debug:
+        msg: The First URL is {{ URL }}
+
+    - name: print the second URL
+      ansible.builtin.debug:
+        msg: The Second URL is {{ URL2 }}
+
+    - name: print the third URL
+      ansible.builtin.debug:
+        msg: The Third URL is {{ URL3 }}
+
