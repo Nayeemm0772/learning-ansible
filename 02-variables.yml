@@ -27,7 +27,7 @@
   tasks:
     - name: printing the 7th URL
       ansible.builtin.debug:
-        msg: "{{ URL7 }}" is the 7th URL
+        msg: "{{ URL7 }} is the 7th URL"
       vars:
         URL7: www.vyjayanthimovies.com
 
