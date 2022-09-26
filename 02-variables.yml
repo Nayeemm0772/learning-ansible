@@ -20,11 +20,12 @@
 
 - name: second demo on variables
   hosts: all
-  vars: vars-sample.yml
+  vars-files:
+    - vars-sample.yml
   tasks:
     - name: printing the 4th URL
       ansible.builtin.debug:
-        msg: the fourth url is {{ URL4 }}
+        msg: the fourth url is the {{ URL4 }}
 
     - name: printing the 5th URL
       ansible.builtin.debug:
