@@ -4,4 +4,4 @@
 
 - name: print the uptime output
   ansible.builtin.debug:
-    msg: "{{ out.stdout }}"
+    msg: "{{  out.stdout  }}"
