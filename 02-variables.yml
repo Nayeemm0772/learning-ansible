@@ -20,7 +20,7 @@
 
 - name: second demo on variables
   hosts: all
-  vars-files:
+  vars_files:
     - vars-sample.yml
   tasks:
     - name: printing the 4th URL
